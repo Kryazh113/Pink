@@ -34,7 +34,107 @@
   </header>
 
   <main class="page-main">
+    <h1 class="visually-hidden">Фотографии пользователей</h1>
 
+    <section class="gallery">
+      <div class="gallery__wrapper">
+        <header class="gallery__header">
+          <h2 class="gallery__title">Фотографии пользователей</h2>
+        </header>
+        <p class="gallery__preview">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <ul class="gallery__list">
+          <li class="gallery__item card">
+            <img class="card__picture panorama" src="img/panorama-mobile.jpg" alt="Панорама города" width="320" height="137">
+            <div class="card__text">
+              <span class="card__name">Анна</span>
+              <span class="card__time">(5 минут назад)</span>
+              <p class="card__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <span class="card__like">Нравится:215</span>
+            </div>
+          </li>
+          <li class="gallery__item card">
+            <img class="card__picture panorama" src="img/photo-car-mobile.jpg" alt="Фотография машины" width="280" height="180">
+            <div class="card__text">
+              <span class="card__name">Левон</span>
+              <span class="card__time">(5 часов назад)</span>
+              <p class="card__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <span class="card__like">Нравится:356</span>
+            </div>
+          </li>
+          <li class="gallery__item card">
+            <img class="card__picture panorama" src="img/photo-drum-mobile.jpg" alt="Барабанная установка" width="280" height="180">
+            <div class="card__text">
+              <span class="card__name">Антон</span>
+              <span class="card__time">(12 часов назад)</span>
+              <p class="card__comment">Соседи будут рады!</p>
+              <span class="card__like">Нравится:666</span>
+            </div>
+          </li>
+          <li class="gallery__item card">
+            <img class="card__picture panorama" src="img/photo-window-mobile.jpg" alt="Фото окна" width="280" height="180">
+            <div class="card__text">
+              <span class="card__name">Борис</span>
+              <span class="card__time">(20 часов назад)</span>
+              <p class="card__comment">Здесь могла ыть ваша цитата о высоком и вечном.</p>
+              <span class="card__like">Нравится:215</span>
+            </div>
+          </li>
+          <li class="gallery__item card">
+            <img class="card__picture panorama" src="img/photo-tent-mobile.jpg" alt="Палатка Кубанская Бахча" width="280" height="180">
+            <div class="card__text">
+              <span class="card__name">Сергей</span>
+              <span class="card__time">(25 часов назад)</span>
+              <p class="card__comment">Самая кубанская в мире!</p>
+              <span class="card__like">Нравится:4</span>
+            </div>
+          </li>
+          <li class="gallery__item card">
+            <img class="card__picture panorama" src="img/photo-rock-mobile.jpg" alt="ноги свисают с горы" width="280" height="180">
+            <div class="card__text">
+              <span class="card__name">Максим</span>
+              <span class="card__time">(40 часов назад)</span>
+              <p class="card__comment">Где снег-то?</p>
+              <span class="card__like">Нравится:150</span>
+            </div>
+          </li>
+          <li class="gallery__item card">
+            <img class="card__picture panorama" src="img/photo-airplane-mobile.jpg" alt="фото неба рядом с крылом самолета" width="280" height="180">
+            <div class="card__text">
+              <span class="card__name">Надежда</span>
+              <span class="card__time">(45 часов назад)</span>
+              <p class="card__comment">Всем GM и взаимные лайки!</p>
+              <span class="card__like">Нравится:2560</span>
+            </div>
+          </li>
+        </ul>
+        <p class="gallery__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
+    </section>
+
+    <section class="editor">
+      <div class="editor__wrapper">
+        <h2 class="visually-hidden">Редактор фотографий</h2>
+        <img class="editor__picture" src="img/photo-winter-mobile.jpg" width="280" height="374" alt="Зимний закат">
+        <div class="editor__tools tools">
+          <button class="tools__button button--cut" type="button">
+            <img src="img/cut.svg" width="44" height="44" alt="обрезать">
+          </button>
+          <button class="tools__button button--fill" type="button">
+            <img src="img/fill.svg" width="48" height="43" alt="заливка">
+          </button>
+          <button class="tools__button button--contrast" type="button">
+            <img src="img/contrast.svg" width="32" height="32" alt="контраст">
+          </button>
+          <div class="tools__intensity">
+            <div class="tools__intensity--level"></div>
+          </div>
+        </div>
+        <div class="editor__buttons submit">
+          <button class="submit__button submit__button--send" type="button">Запостить</button>
+          <button class="submit__button submit__button--canсel" type="button">Отмена</button>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
