@@ -1,0 +1,12 @@
+@mixin sizes ($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+
+//Пример использования
+// .page-header {
+//   background-color: aquamarine;
+
+//   @include sizes(200px, 200px)
+// }
