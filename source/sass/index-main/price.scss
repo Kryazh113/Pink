@@ -1,0 +1,14 @@
+.price {
+  background-color: $light_gray;
+}
+
+.price__list th {
+  background-color: $dark_gray;
+  color: $basic_white;
+}
+
+.price__list td {
+  background-color: $table_background;
+  line-height: 30px;
+  text-transform: uppercase;
+}

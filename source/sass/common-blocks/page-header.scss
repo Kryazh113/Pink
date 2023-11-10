@@ -1,0 +1,10 @@
+.page-header {
+  background-color: $dark_gray;
+  color: $basic_white;
+  width: 320px;
+  // min-width: 320px;
+  min-height: 69px;
+  padding: 23px 20px;
+  display: flex;
+  justify-content: space-between;
+}

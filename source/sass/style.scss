@@ -1,9 +1,28 @@
 // Global
-@import "global/normalize";
-@import "global/fonts.scss";
-@import "global/global.scss";
-@import "global/variables.scss";
-@import "global/mixins.scss";
+@import "common-blocks/normalize";
+@import "common-blocks/fonts.scss";
+@import "common-blocks/colors.scss";
+@import "common-blocks/global.scss";
+@import "common-blocks/page.scss";
+@import "common-blocks/button.scss";
+@import "common-blocks/mixins.scss";
 
 //Blocks
-@import "blocks/page-header.scss";
+@import "common-blocks/page-header.scss";
+@import "common-blocks/main-nav.scss";
+@import "common-blocks/page-main.scss";
+@import "common-blocks/page-footer.scss";
+@import "common-blocks/page-footer__social.scss";
+@import "common-blocks/page-footer__copyright.scss";
+@import "common-blocks/slider.scss";
+//index.html
+@import "index-main/advantages.scss";
+@import "index-main/contacts.scss";
+@import "index-main/price.scss";
+@import "index-main/reviews.scss";
+//catalog.html
+@import "catalog-main/gallery.scss";
+@import "catalog-main/editor.scss";
+//form.html
+@import "form-main/contest.scss";
+@import "form-main/modal.scss";
