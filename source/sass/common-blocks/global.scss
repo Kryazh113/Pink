@@ -40,8 +40,15 @@ a {
   background-color: $dark_gray;
   background-image: url("./../../img/back-mobile.jpg");
   background-repeat: no-repeat;
+  min-height: 236px;
 }
 
 .main-header--preview {
-
+  margin: 0;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-top: 36px;
 }

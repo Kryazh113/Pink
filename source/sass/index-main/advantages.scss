@@ -1,15 +1,19 @@
 .advantages__header {
+  position: relative;
   min-height: 462px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 286px;
+    top: 176px;
+    background-image: url("./../../img/hands_phone.png");
+  }
 }
 
 .advanteges__header--preview {
-  margin: 0;
-  padding: 0 20px;
-  padding-top: 29px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 28px;
+  min-height: 462px;
 }
 
 .advantages__link--logotypes {
@@ -21,17 +25,9 @@
 }
 
 .advantages__link {
-  display: block;
   margin-top: 28px;
   margin-bottom: 32px;
   color: $basic_white;
-  border-radius: 29px;
-  border: 3px solid $basic_white;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 18px;
-  min-width: 280px;
 }
 
 .advantages__logo-wrapper {
