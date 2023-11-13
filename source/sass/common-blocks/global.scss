@@ -1,0 +1,62 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  // color: $dark;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.main-header {
+  position: relative;
+  z-index: -1;
+  top: -79px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $basic_white;
+  background-color: $dark_gray;
+  background-image: url("./../../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  min-height: 236px;
+
+  @media (min-width: 660px) {
+    background-image: url("./../../img/back-tablet.jpg");
+  }
+}
+
+.main-header--preview {
+  margin: 0;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-top: 36px;
+  padding-top: 60px;
+}

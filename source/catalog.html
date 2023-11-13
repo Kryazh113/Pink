@@ -2,17 +2,22 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pink</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
-  <header class="page-header">
+  <header class="page-header page-header--opened">
     <a class="page-header__logo">
       <img src="img/logotype-mobile.svg" width="74" height="23" alt="Логотип приложения Pink">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+      <button class="main-nav__toggle main-nav__toggle--closed" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
@@ -39,8 +44,8 @@
 
     <section class="gallery">
       <div class="gallery__wrapper">
-        <header class="gallery__header">
-          <h2 class="gallery__title">Фотографии пользователей</h2>
+        <header class="gallery__header  main-header">
+          <h2 class="gallery__title  main-header--preview">Фотографии пользователей</h2>
         </header>
         <p class="gallery__preview">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <ul class="gallery__list">
@@ -54,7 +59,7 @@
             </div>
           </li>
           <li class="gallery__item card">
-            <img class="card__picture panorama" src="img/photo-car-mobile.jpg" alt="Фотография машины" width="280" height="180">
+            <img class="card__picture" src="img/photo-car-mobile.jpg" alt="Фотография машины" width="280" height="180">
             <div class="card__text">
               <span class="card__name">Левон</span>
               <span class="card__time">(5 часов назад)</span>
@@ -63,7 +68,7 @@
             </div>
           </li>
           <li class="gallery__item card">
-            <img class="card__picture panorama" src="img/photo-drum-mobile.jpg" alt="Барабанная установка" width="280" height="180">
+            <img class="card__picture" src="img/photo-drum-mobile.jpg" alt="Барабанная установка" width="280" height="180">
             <div class="card__text">
               <span class="card__name">Антон</span>
               <span class="card__time">(12 часов назад)</span>
@@ -72,7 +77,7 @@
             </div>
           </li>
           <li class="gallery__item card">
-            <img class="card__picture panorama" src="img/photo-window-mobile.jpg" alt="Фото окна" width="280" height="180">
+            <img class="card__picture" src="img/photo-window-mobile.jpg" alt="Фото окна" width="280" height="180">
             <div class="card__text">
               <span class="card__name">Борис</span>
               <span class="card__time">(20 часов назад)</span>
@@ -81,7 +86,7 @@
             </div>
           </li>
           <li class="gallery__item card">
-            <img class="card__picture panorama" src="img/photo-tent-mobile.jpg" alt="Палатка Кубанская Бахча" width="280" height="180">
+            <img class="card__picture" src="img/photo-tent-mobile.jpg" alt="Палатка Кубанская Бахча" width="280" height="180">
             <div class="card__text">
               <span class="card__name">Сергей</span>
               <span class="card__time">(25 часов назад)</span>
@@ -90,7 +95,7 @@
             </div>
           </li>
           <li class="gallery__item card">
-            <img class="card__picture panorama" src="img/photo-rock-mobile.jpg" alt="ноги свисают с горы" width="280" height="180">
+            <img class="card__picture" src="img/photo-rock-mobile.jpg" alt="ноги свисают с горы" width="280" height="180">
             <div class="card__text">
               <span class="card__name">Максим</span>
               <span class="card__time">(40 часов назад)</span>
@@ -99,7 +104,7 @@
             </div>
           </li>
           <li class="gallery__item card">
-            <img class="card__picture panorama" src="img/photo-airplane-mobile.jpg" alt="фото неба рядом с крылом самолета" width="280" height="180">
+            <img class="card__picture" src="img/photo-airplane-mobile.jpg" alt="фото неба рядом с крылом самолета" width="280" height="180">
             <div class="card__text">
               <span class="card__name">Надежда</span>
               <span class="card__time">(45 часов назад)</span>
@@ -108,7 +113,7 @@
             </div>
           </li>
         </ul>
-        <p class="gallery__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="gallery__text">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
       </div>
     </section>
 
@@ -131,8 +136,8 @@
           </div>
         </div>
         <div class="editor__buttons submit">
-          <button class="submit__button submit__button--send" type="button">Запостить</button>
-          <button class="submit__button submit__button--canсel" type="button">Отмена</button>
+          <button class="submit__button--send button" type="button">Запостить</button>
+          <button class="submit__button--canсel button" type="button">Отмена</button>
         </div>
       </div>
     </section>
@@ -162,5 +167,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,64 @@
+// .price {
+//   background-color: $light_gray;
+// }
+
+// .price__list th {
+//   background-color: $dark_gray;
+//   color: $basic_white;
+// }
+
+// .price__list td {
+//   background-color: $table_background;
+//   line-height: 30px;
+//   text-transform: uppercase;
+// }
+
+.price__wrapper {
+  background-color: $light_gray;
+}
+
+.price__list {
+  list-style: none;
+  padding: 0;
+  width: 280px;
+  margin: 0;
+}
+
+.price__item {
+  border-radius: 1px 0 0 0;
+  border: 2px solid $table_background;
+  background: $basic_white;
+}
+
+.price__title {
+  margin: 0;
+  background-color: $dark_gray;
+  color: $basic_white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding-top: 19px;
+  padding-bottom: 35px;
+}
+
+.price__value {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.options__list {
+  list-style: none;
+  padding: 0;
+}
+
+.options__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border: 1px solid $table_background;
+  height: 60px;
+}
