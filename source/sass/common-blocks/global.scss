@@ -33,6 +33,9 @@ a {
 }
 
 .main-header {
+  position: relative;
+  z-index: -1;
+  top: -79px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -41,6 +44,10 @@ a {
   background-image: url("./../../img/back-mobile.jpg");
   background-repeat: no-repeat;
   min-height: 236px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("./../../img/back-tablet.jpg");
+  }
 }
 
 .main-header--preview {
@@ -51,4 +58,5 @@ a {
   font-weight: 300;
   line-height: 28px;
   margin-top: 36px;
+  padding-top: 60px;
 }

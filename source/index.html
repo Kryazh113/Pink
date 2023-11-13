@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pink</title>
     <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="preload" href="fonts/opensanslight.woff2" as="font">
@@ -11,16 +12,15 @@
   </head>
 
 <body class="page-body">
-  <header class="page-header">
+  <header class="page-header page-header--opened">
     <a class="page-header__logo">
       <img src="img/logotype-mobile.svg" width="74" height="23" alt="Логотип приложения Pink">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+      <button class="main-nav__toggle main-nav__toggle--closed" type="button">
         <span class="visually-hidden">Открыть меню</span>
-        <img src="img/close-menu-btn.svg" width="23" height="23" alt="Закрыть">
       </button>
-      <div class="main-nav__wrapper">
+      <div class="main-nav__wrapper main-nav__wrapper--nojs">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a>Главная</a>
@@ -92,7 +92,7 @@
       <div class="reviews__wrapper slider">
         <h2 class="visually-hidden">Отзывы о нас</h2>
         <div class="reviews__list slider__list">
-          <blockquote class="reviews__item slider__item">
+          <blockquote class="reviews__item slider__item slider__item--current">
             <cite class="reviews__author">Николай Петров</cite>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
@@ -116,7 +116,7 @@
     <section class="price">
       <div class="price__wrapper slider">
         <h2 class="visually-hidden">Тарифные планы</h2>
-        <table class="price__list slider__list">
+        <!-- <table class="price__list slider__list">
           <tr>
             <th class="price__item phone-hidden"></th>
             <th class="price__item base">
@@ -177,37 +177,73 @@
               <img src="img/yes.svg" width="31" height="21" alt="да">
             </td>
           </tr>
-        </table>
-        <!-- Если не получится с таблицей то попробуем списком
-          <ul class="price__list slider__list">
-          <li class="price__item price__item-base">
+        </table> -->
+        <!-- Если не получится с таблицей то попробуем списком -->
+        <ul class="price__list slider__list">
+          <li class="price__item slider__item">
             <h3 class="price__title">
-              База
+              База<br>
+              <span class="price__value">1,99 USD</span>
             </h3>
-            <p class="price__value">
-              1,99 USD
-            </p>
+            <ul class="price__item--options options__list">
+              <li class="options__item">
+                <span>Розовый фильтр</span>
+                <img src="img/yes.svg" width="31" height="21" alt="yes">
+              </li>
+              <li class="options__item">
+                <span>Смайлики</span>
+                <img src="img/no.svg" width="27" height="27" alt="no">
+              </li>
+              <li class="options__item">
+                <span>Комментарии</span>
+                <img src="img/no.svg" width="27" height="27" alt="no">
+              </li>
+            </ul>
           </li>
-          <li class="price__item price__item-standert is-hit">
+          <li class="price__item slider__item slider__item--current is-hit">
             <h3 class="price__title">
-              Стандарт
+              Стандарт<br>
+              <span class="price__value">3,99 USD</span>
             </h3>
-            <p class="price__value">
-              3,99 USD
-            </p>
+            <ul class="price__item--options options__list">
+              <li class="options__item">
+                <span>Розовый фильтр</span>
+                <img src="img/yes.svg" width="31" height="21" alt="yes">
+              </li>
+              <li class="options__item">
+                <span>Смайлики</span>
+                <img src="img/yes.svg" width="31" height="21" alt="yes">
+              </li>
+              <li class="options__item">
+                <span>Комментарии</span>
+                <img src="img/no.svg" width="27" height="27" alt="no">
+              </li>
+            </ul>
           </li>
-          <li class="price__item price__item-unlim">
+          <li class="price__item slider__item">
             <h3 class="price__title">
-              Анлим
+              Анлим<br>
+              <span class="price__value">9,99 USD</span>
             </h3>
-            <p class="price__value">
-              9,99 USD
-            </p>
+            <ul class="price__item--options options__list">
+              <li class="options__item">
+                <span>Розовый фильтр</span>
+                <img src="img/yes.svg" width="31" height="21" alt="yes">
+              </li>
+              <li class="options__item">
+                <span>Смайлики</span>
+                <img src="img/yes.svg" width="31" height="21" alt="yes">
+              </li>
+              <li class="options__item">
+                <span>Комментарии</span>
+                <img src="img/yes.svg" width="31" height="21" alt="yes">
+              </li>
+            </ul>
           </li>
-        </ul> -->
+        </ul>
         <p class="price__toggles slider__toggles">
-          <button class="slider__toggle slider__toggle--current" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle  slider__toggle--current" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
         </p>
       </div>
@@ -261,5 +297,6 @@
     </div>
   </footer>
   <script src="js/script.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 </html>

@@ -1,5 +1,8 @@
-.advantages__header {
+.advantages__wrapper {
   position: relative;
+}
+
+.advantages__header {
   min-height: 462px;
 
   &::after {
@@ -13,7 +16,7 @@
 }
 
 .advanteges__header--preview {
-  min-height: 462px;
+  min-height: 425px;
 }
 
 .advantages__link--logotypes {
@@ -65,10 +68,19 @@
 }
 
 .advantages__list--wrapper {
+  position: relative;
   background-color: $light_gray;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    border: 20px solid transparent;
+    border-right: 20px solid $basic_green;
+    border-bottom: 20px solid $basic_green;
+  }
 }
 
 .advantages__item {

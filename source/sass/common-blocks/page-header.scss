@@ -1,10 +1,13 @@
 .page-header {
-  background-color: $dark_gray;
+  background-color: rgba($basic_black, 0.3);
   color: $basic_white;
-  width: 320px;
-  // min-width: 320px;
+  min-width: 320px;
   min-height: 69px;
-  padding: 23px 20px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
+}
+
+.page-header--opened {
+  background-color: $dark_gray;
 }

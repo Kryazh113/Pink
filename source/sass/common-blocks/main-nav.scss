@@ -5,8 +5,59 @@
 .main-nav__wrapper {
   position: absolute;
   background-color: $dark_gray;
+  top: 50px;
   right: -20px;
   z-index: 2;
+  width: 100vw;
+  text-align: center;
+}
+
+.main-nav__toggle {
+  padding: 0;
+  position: relative;
+  z-index: 2;
+  top: 5px;
+  right: 20px;
+  display: block;
+  width: 24px;
+  height: 16px;
+  background-color: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav__toggle--closed::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: $basic_white;
+  top: 0;
+  left: 0;
+  box-shadow:
+    0 8px 0 0 $basic_white,
+    0 16px 0 0 $basic_white;
+}
+
+.main-nav__toggle--opened {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 2px;
+    background-color: $basic_white;
+    top: 5px;
+    left: 0;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 .site-list {

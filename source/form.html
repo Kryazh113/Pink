@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pink</title>
     <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="preload" href="fonts/opensanslight.woff2" as="font">
@@ -11,14 +12,13 @@
   </head>
 
 <body class="page-body">
-  <header class="page-header">
+  <header class="page-header page-header--opened">
     <a class="page-header__logo">
       <img src="img/logotype-mobile.svg" width="74" height="23" alt="Логотип приложения Pink">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+      <button class="main-nav__toggle main-nav__toggle--closed" type="button">
         <span class="visually-hidden">Открыть меню</span>
-        <img src="img/close-menu-btn.svg" width="23" height="23" alt="Закрыть">
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
