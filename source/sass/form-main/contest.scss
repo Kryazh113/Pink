@@ -1,0 +1,83 @@
+.form__description {
+  color: $dark_gray;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 54px 20px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.form__section {
+  border: none;
+  padding: 42px 22px;
+  margin: 0;
+}
+
+.form__section__title {
+  color: $basic_pink;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 25px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-bottom: 42px;
+}
+
+.form__label {
+  display: inline-block;
+  color: $basic_pink;
+  padding-left: 21px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.form__input {
+  width: 100%;
+  height: 59px;
+  padding: 23px 20px;
+  line-height: 30px;
+  border: 2px solid $table_background;
+  margin-bottom: 22px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.achievements,
+.application {
+  background-color: $light_gray;
+}
+
+.achievements__check,
+.application__radio {
+  color: $dark_gray;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: inherit;
+}
+
+.form__textarea {
+  min-height: 197px;
+}
+
+.form__button-submit {
+  background-color: $basic_green;
+  color: $basic_white;
+  margin: 0 auto;
+  border-radius: 1px;
+  border: 2px solid $basic_green;
+  margin-bottom: 46px;
+}
+
+.form__text {
+  display: block;
+  text-align: center;
+}

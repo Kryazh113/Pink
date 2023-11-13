@@ -1,0 +1,26 @@
+.contacts__wrapper {
+  padding: 0 40px;
+  text-align: center;
+}
+
+.contacts__preview {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28.8px;
+  margin-top: 50px;
+  margin-bottom: 45px;
+}
+
+.contacts__text {
+  font-weight: 700;
+  margin: 0;
+}
+
+.contacts__link {
+  display: inline-block;
+  color: $basic_pink;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 5px;
+  margin-bottom: 31px;
+}

@@ -1,0 +1,59 @@
+.editor {
+  background-color: $light_gray;
+}
+
+.editor__wrapper {
+  padding: 0 20px;
+}
+
+.editor__picture {
+  width: 280px;
+  height: 374px;
+  margin-top: 20px;
+  margin-bottom: 42px;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.tools__button {
+  border: none;
+  background-color: $light_gray;
+}
+
+.tools__intensity {
+  min-width: 240px;
+  height: 2px;
+  background-color: $dark_gray;
+  margin: 39px 0 34px 0;
+}
+
+.editor__buttons {
+  position: relative;
+  padding-top: 38px;
+  padding-bottom: 41px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    min-width: 320px;
+    height: 1px;
+    background-color: $opacity_gray;
+    top: 0;
+    left: -20px;
+  }
+}
+
+.submit__button--send {
+  border-color: $basic_pink;
+  color: $basic_pink;
+}
+
+.submit__button--canсel {
+  border-color: $dark_gray;
+  opacity: 0.1;
+}
