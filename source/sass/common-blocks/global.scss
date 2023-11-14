@@ -32,7 +32,20 @@ a {
   margin: 0 auto;
 }
 
+@media (max-width: $mobile-only-width) {
+  .not__mobile {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .only__mobile {
+    display: none;
+  }
+}
+
 .main-header {
+  // min-height: 462px;
   position: relative;
   z-index: -1;
   top: -79px;
@@ -44,9 +57,12 @@ a {
   background-image: url("./../../img/back-mobile.jpg");
   background-repeat: no-repeat;
   min-height: 236px;
+  background-position: 50% 4%;
 
-  @media (min-width: 660px) {
+  @media (min-width: $tablet-width) {
     background-image: url("./../../img/back-tablet.jpg");
+    min-height: 729px;
+    justify-content: flex-start;
   }
 }
 

@@ -6,4 +6,8 @@
   margin: 0;
   list-style: none;
   margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }

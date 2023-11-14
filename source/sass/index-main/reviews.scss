@@ -1,8 +1,14 @@
+.reviews {
+  position: relative;
+  z-index: 3;
+  background-color: $basic_white;
+  padding: 50px 0;
+}
+
 .reviews__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
 }
 
 .reviews__item {
@@ -20,9 +26,30 @@
   font-weight: 700;
   line-height: 30px;
   margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.reviews__author--info {
+  @media (min-width: $tablet-width) {
+    order: 3;
+    margin-bottom: 20px;
+  }
 }
 
 .reviews__text {
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: 24px;
+  min-height: 190px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    min-height: 93px;
+  }
 }

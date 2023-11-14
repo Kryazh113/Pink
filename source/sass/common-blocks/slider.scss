@@ -4,8 +4,27 @@
   align-items: center;
 }
 
+.slider__toggles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 19px;
+}
+
+.slider__toggle {
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba($dark_gray, 0.3);
+  border: none;
+}
+
 .slider__toggle--current {
-  background-color: $basic_green;
+  width: 12px;
+  height: 12px;
+  background-color: inherit;
+  border: 3px solid $dark_gray;
 }
 
 .slider__item {
@@ -13,5 +32,6 @@
 }
 
 .slider__item--current {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }

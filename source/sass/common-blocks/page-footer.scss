@@ -1,5 +1,5 @@
 .page-footer {
-  width: 320px;
+  min-width: 320px;
 }
 
 .page-footer__wrapper {
@@ -7,8 +7,19 @@
   flex-direction: column;
   align-items: center;
   margin: 40px 74px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    margin: 40px 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .page-footer__logo {
   margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
