@@ -6,6 +6,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .contacts__preview {
@@ -29,9 +34,26 @@
   margin: 0;
 }
 
+.contacts__phone {
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+  }
+}
+
+.contacts__email {
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / 4;
+  }
+}
+
 .contacts__address {
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
   }
 }
 

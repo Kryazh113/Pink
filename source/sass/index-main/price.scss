@@ -8,15 +8,18 @@
 .price__list {
   position: relative;
   list-style: none;
-  padding: 0 20px;
   display: flex;
-  right: 280px;
+  right: 320px;
   margin: 0 auto;
   margin-bottom: 45px;
 
   @media (min-width: $tablet-width) {
-    right: 0;
+    right: 40px;
     align-items: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
@@ -28,6 +31,7 @@
 
   @media (min-width: $tablet-width) {
     min-width: 152px;
+    width: 100%;
   }
 }
 
@@ -42,6 +46,10 @@
   text-transform: uppercase;
   padding-top: 16px;
   padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding: 7px;
+  }
 }
 
 .price__value {

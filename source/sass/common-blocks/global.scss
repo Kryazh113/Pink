@@ -30,6 +30,10 @@ a {
 .wrapper {
   padding: 0 20px;
   margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 130px;
+  }
 }
 
 @media (max-width: $mobile-only-width) {
@@ -40,6 +44,18 @@ a {
 
 @media (min-width: $tablet-width) {
   .only__mobile {
+    display: none;
+  }
+}
+
+@media (max-width: $desktop-only-width) {
+  .only-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .not__desktop {
     display: none;
   }
 }
@@ -63,6 +79,13 @@ a {
     background-image: url("./../../img/back-tablet.jpg");
     min-height: 729px;
     justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 130px;
+    background-image: url("./../../img/back-desktop.jpg");
+    top: -100px;
+    min-height: 853px;
   }
 }
 

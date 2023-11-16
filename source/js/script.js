@@ -1,32 +1,18 @@
+const nav = document.querySelector(".main-nav");
 const menuButton = document.querySelector(".main-nav__toggle");
 const userNavigation = document.querySelector(".main-nav__wrapper");
 const pageHeader = document.querySelector(".page-header");
 
-userNavigation.classList.add("visually-hidden")
 pageHeader.classList.remove("page-header--opened");
 
-//Конструкция if else
-// menuButton.addEventListener("click", () => {
-//   if (userNavigation.classList.contains("visually-hidden")) {
-//     userNavigation.classList.remove("visually-hidden");
-//     pageHeader.classList.add("page-header--opened");
-//   }
-//   else {
-//     userNavigation.classList.add("visually-hidden");
-//     pageHeader.classList.remove("page-header--opened");
-//   };
-// });
-
 menuButton.addEventListener("click", () => {
-  userNavigation.classList.contains("visually-hidden")
-      ?
-      userNavigation.classList.remove("visually-hidden") &
-      pageHeader.classList.add("page-header--opened") &
-      menuButton.classList.remove("main-nav__toggle--closed") &
-      menuButton.classList.add("main-nav__toggle--opened")
-      :
-      userNavigation.classList.add("visually-hidden") &
-      pageHeader.classList.remove("page-header--opened") &
-      menuButton.classList.remove("main-nav__toggle--opened") &
-      menuButton.classList.add("main-nav__toggle--closed")
-});
+  nav.classList.contains('main-nav--closed')
+    ?
+    nav.classList.add('main-nav--opened') &
+    nav.classList.remove('main-nav--closed') &
+    pageHeader.classList.add("page-header--opened")
+    :
+      nav.classList.add('main-nav--closed') &
+      nav.classList.remove('main-nav--opened') &
+      pageHeader.classList.remove("page-header--opened")
+})

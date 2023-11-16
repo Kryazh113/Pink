@@ -12,12 +12,12 @@
   </head>
 
 <body class="page-body">
-  <header class="page-header page-header--opened">
+  <header class="page-header page-header--opened wrapper">
     <a class="page-header__logo">
       <img src="img/logotype-mobile.svg" width="74" height="23" alt="Логотип приложения Pink">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle main-nav__toggle--closed" type="button">
+    <nav class="main-nav main-nav--closed">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper main-nav__wrapper--nojs">
@@ -76,13 +76,18 @@
               <dt class="advantages__name">Заводит новых друзей</dt>
               <dd class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</dd>
             </div>
+            <div class="advantages__item advantages__picture--wrapper">
+              <img class="advantages__picture only-desktop" src="img/iphone__mobile-1.png" width="157" height="320" alt="изображение айфона">
+              <img class="advantages__picture only-desktop" src="img/iphone__mobile-2.png" width="157" height="320" alt="изображение айфона">
+              <img class="advantages__picture" src="img/iphone__mobile-3.png" width="157" height="320" alt="изображение айфона">
+            </div>
           </dl>
         </div>
         <div class="advantages__duration duration not__mobile">
           <img class="duration__picture" src="img/timer.svg" width="238" height="276" alt="Изображение таймера">
           <div class="duration__wrapper">
-            <h3 class="duration__preview">Эффект<br> на 24 часа!</h3>
-            <p class="duration__description">Британские ученые провели исследования<br> и доказали, что положительный эффект<br> от использования приложения длится целые сутки!</p>
+            <h3 class="duration__preview">Эффект<br class="not__desktop"> на 24 часа!</h3>
+            <p class="duration__description">Британские ученые провели исследования<br class="not__desktop"> и доказали,<br class="only-desktop"> что положительный эффект<br class="not__desktop"> от использования приложения<br class="only-desktop"> длится целые сутки!</p>
             <a class="duration__link" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -90,7 +95,7 @@
     </section>
 
     <section class="reviews">
-      <div class="reviews__wrapper slider">
+      <div class="reviews__wrapper slider wrapper">
         <h2 class="visually-hidden">Отзывы о нас</h2>
         <div class="reviews__list slider__list">
           <blockquote class="reviews__item slider__item slider__item--current">
@@ -109,16 +114,16 @@
             <p class="reviews__text">«Вообще я за телефоном провожу мало вресмени, но если беру в руки телефон то всегда сижу в этом приложении!»</p>
           </blockquote>
         </div>
-        <p class="reviews__toggles slider__toggles">
+        <div class="reviews__toggles slider__toggles">
           <button class="slider__toggle slider__toggle--current" type="button"></button>
           <button class="slider__toggle" type="button"></button>
           <button class="slider__toggle" type="button"></button>
-        </p>
+        </div>
       </div>
     </section>
 
     <section class="price">
-      <div class="price__wrapper slider">
+      <div class="price__wrapper slider wrapper">
         <h2 class="visually-hidden">Тарифные планы</h2>
         <ul class="price__list slider__list">
           <li class="price__item not__mobile">
@@ -203,81 +208,8 @@
       </div>
     </section>
 
-    <!-- <section class="price">
-      <div class="price__wrapper slider">
-        <h2 class="visually-hidden">Тарифные планы</h2>
-        <ul class="price__list slider__list">
-          <li class="price__item slider__item">
-            <h3 class="price__title">
-              База<br>
-              <span class="price__value">1,99 USD</span>
-            </h3>
-            <ul class="price__item--options options__list">
-              <li class="options__item">
-                <span>Розовый фильтр</span>
-                <img src="img/yes.svg" width="31" height="21" alt="yes">
-              </li>
-              <li class="options__item">
-                <span>Смайлики</span>
-                <img src="img/no.svg" width="27" height="27" alt="no">
-              </li>
-              <li class="options__item">
-                <span>Комментарии</span>
-                <img src="img/no.svg" width="27" height="27" alt="no">
-              </li>
-            </ul>
-          </li>
-          <li class="price__item slider__item slider__item--current is-hit">
-            <h3 class="price__title">
-              Стандарт<br>
-              <span class="price__value">3,99 USD</span>
-            </h3>
-            <ul class="price__item--options options__list">
-              <li class="options__item">
-                <span>Розовый фильтр</span>
-                <img src="img/yes.svg" width="31" height="21" alt="yes">
-              </li>
-              <li class="options__item">
-                <span>Смайлики</span>
-                <img src="img/yes.svg" width="31" height="21" alt="yes">
-              </li>
-              <li class="options__item">
-                <span>Комментарии</span>
-                <img src="img/no.svg" width="27" height="27" alt="no">
-              </li>
-            </ul>
-          </li>
-          <li class="price__item slider__item">
-            <h3 class="price__title">
-              Анлим<br>
-              <span class="price__value">9,99 USD</span>
-            </h3>
-            <ul class="price__item--options options__list">
-              <li class="options__item">
-                <span>Розовый фильтр</span>
-                <img src="img/yes.svg" width="31" height="21" alt="yes">
-              </li>
-              <li class="options__item">
-                <span>Смайлики</span>
-                <img src="img/yes.svg" width="31" height="21" alt="yes">
-              </li>
-              <li class="options__item">
-                <span>Комментарии</span>
-                <img src="img/yes.svg" width="31" height="21" alt="yes">
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <p class="price__toggles slider__toggles">
-          <button class="slider__toggle" type="button"></button>
-          <button class="slider__toggle  slider__toggle--current" type="button"></button>
-          <button class="slider__toggle" type="button"></button>
-        </p>
-      </div>
-    </section> -->
-
     <section class="contacts">
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper wrapper">
         <h3 class="contacts__preview">Остались вопросы?<br class="not__mobile"> Свяжитесь с нами!</h3>
         <p class="contacts__text contacts__phone">
           Звоните:<br>
@@ -300,7 +232,7 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper wrapper">
       <div class="page-footer__logo logo">
         <img src="img/logotype-footer-mobile.svg" width="145" height="40" alt="Логотип PINK">
       </div>
