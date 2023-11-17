@@ -12,7 +12,7 @@
 </head>
 
 <body class="page-body">
-  <header class="page-header page-header--opened">
+  <header class="page-header page-header--opened wrapper">
     <a class="page-header__logo">
       <img src="img/logotype-mobile.svg" width="74" height="23" alt="Логотип приложения Pink">
     </a>
@@ -45,19 +45,19 @@
     <section class="gallery">
       <div class="gallery__wrapper">
         <header class="gallery__header  main-header">
-          <h2 class="gallery__title  main-header--preview">Фотографии пользователей</h2>
+          <h2 class="gallery__title  main-header--preview">Фотографии<br> пользователей</h2>
         </header>
-        <p class="gallery__preview">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <p class="gallery__preview">Взгляните на фотографии, которые выкладывают<br class="not__mobile"> пользователи! Видите, как не хватает ваших?</p>
+        <div class="gallery__item card card-panorama">
+          <img class="card__picture panorama" src="img/panorama-mobile.jpg" alt="Панорама города" width="320" height="137">
+          <div class="card__text">
+            <span class="card__name">Анна</span>
+            <span class="card__time">(5 минут назад)</span>
+            <p class="card__comment">Прыгать или нет? Напишите в комментарии свой совет и<br class="only__mobile"> смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <span class="card__like">Нравится:215</span>
+          </div>
+        </div>
         <ul class="gallery__list">
-          <li class="gallery__item card">
-            <img class="card__picture panorama" src="img/panorama-mobile.jpg" alt="Панорама города" width="320" height="137">
-            <div class="card__text">
-              <span class="card__name">Анна</span>
-              <span class="card__time">(5 минут назад)</span>
-              <p class="card__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <span class="card__like">Нравится:215</span>
-            </div>
-          </li>
           <li class="gallery__item card">
             <img class="card__picture" src="img/photo-car-mobile.jpg" alt="Фотография машины" width="280" height="180">
             <div class="card__text">
@@ -81,7 +81,7 @@
             <div class="card__text">
               <span class="card__name">Борис</span>
               <span class="card__time">(20 часов назад)</span>
-              <p class="card__comment">Здесь могла ыть ваша цитата о высоком и вечном.</p>
+              <p class="card__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <span class="card__like">Нравится:215</span>
             </div>
           </li>
@@ -113,12 +113,12 @@
             </div>
           </li>
         </ul>
-        <p class="gallery__text">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="gallery__text wrapper">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
       </div>
     </section>
 
     <section class="editor">
-      <div class="editor__wrapper">
+      <div class="editor__wrapper wrapper">
         <h2 class="visually-hidden">Редактор фотографий</h2>
         <img class="editor__picture" src="img/photo-winter-mobile.jpg" width="280" height="374" alt="Зимний закат">
         <div class="editor__tools tools">
@@ -144,7 +144,7 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper wrapper">
       <div class="page-footer__logo logo">
         <img src="img/logotype-footer-mobile.svg" width="145" height="40" alt="Логотип PINK">
       </div>
