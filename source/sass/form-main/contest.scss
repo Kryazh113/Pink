@@ -1,17 +1,45 @@
+.contest__header.main-header {
+  @media (min-width: $tablet-width) {
+    min-height: 425px;
+    justify-content: center;
+  }
+}
+
+.form {
+  margin-top: -40px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .form__description {
   color: $dark_gray;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
-  margin: 54px 20px;
   text-align: center;
-  margin-bottom: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 85px;
+    font-size: 18px;
+    order: 0;
+  }
 }
 
 .form__section {
   border: none;
-  padding: 42px 22px;
   margin: 0;
+  padding: 44px 20px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding: 50px 60px;
+    margin: 44px 20px;
+    border: 1px solid $table_background;
+  }
 }
 
 .form__section__title {
@@ -19,40 +47,120 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0 25px;
+  margin-bottom: 44px;
   padding: 0;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: $basic_white;
+    padding: 20px;
+    width: fit-content;
+  }
+}
+
+//порядок расположения на планшетном разрешении
+@media (min-width: $tablet-width) {
+  .user-data {
+    order: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .achievements {
+    order: 3;
+  }
+
+  .contacts {
+    order: 2;
+
+    & label {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+
+    & span {
+      margin-left: 20px;
+    }
+  }
+
+  .application {
+    order: 1;
+  }
+
+  .comment {
+    order: 4;
+  }
+
+  .submit {
+    order: 5;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0;
+  }
 }
 
 .form__label {
   display: inline-block;
   color: $basic_pink;
-  padding-left: 21px;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
   margin-bottom: 10px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    & span {
+      margin-right: 20px;
+      margin-top: 20px;
+    }
+  }
 }
 
 .form__input {
   width: 100%;
   height: 59px;
   padding: 23px 20px;
+  font-size: 18px;
   line-height: 30px;
   border: 2px solid $table_background;
-  margin-bottom: 22px;
 
   &:last-child {
     margin-bottom: 0;
   }
 }
 
+.form__input__icon {
+  position: absolute;
+  width: 59px;
+  height: 59px;
+  padding: 20px;
+  background-color: $table_background;
+  right: 0;
+  top: 0;
+}
+
 .achievements,
 .application {
   background-color: $light_gray;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic_white;
+  }
 }
 
 .achievements__check,
@@ -62,6 +170,73 @@
   font-weight: 400;
   line-height: 30px;
   text-transform: inherit;
+}
+
+.achievements__check {
+  position: relative;
+  padding: 7px;
+  padding-left: 46px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.achievements__checkbox + label::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-color: $basic_white;
+  border-radius: 1px;
+  border: 2px solid $table_background;
+  outline: 1px solid $light_gray;
+  outline-offset: -1px;
+  left: 0;
+  top: 5px;
+}
+
+.achievements__checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 16px;
+  background-image: url("./../../img/ok.svg");
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+  left: 7px;
+  top: 15px;
+}
+
+.application__radio {
+  position: relative;
+  padding: 7px;
+  padding-left: 46px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.application__radio-button + label::before {
+  content: "";
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  background-color: $basic_white;
+  border-radius: 50%;
+  border: 2px solid $table_background;
+  outline: 1px solid $light_gray;
+  outline-offset: -1px;
+  left: 0;
+  top: 5px;
+}
+
+.application__radio-button:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: $basic_pink;
+  border-radius: 50%;
+  left: 11px;
+  top: 16px;
 }
 
 .form__textarea {
@@ -75,6 +250,12 @@
   border-radius: 1px;
   border: 2px solid $basic_green;
   margin-bottom: 46px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 296px;
+    height: 59px;
+  }
 }
 
 .form__text {
