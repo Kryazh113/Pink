@@ -2,37 +2,119 @@
   background-color: $light_gray;
 }
 
+.editor__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 57px 20px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 47px;
+  }
+}
 
 .editor__picture {
   width: 280px;
   height: 374px;
   margin-top: 20px;
   margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 400px;
+    margin: 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+  }
 }
 
 .tools {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr min-content;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    grid-row:  1 / 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
 .tools__button {
   border: none;
   background-color: $light_gray;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    margin-right: 28px;
+  }
 }
 
 .tools__intensity {
+  position: relative;
   min-width: 240px;
   height: 2px;
   background-color: $dark_gray;
   margin: 39px 0 34px 0;
+  grid-column: 1 / -1;
+  grid-row:  2 / 3;
+
+  @media (min-width: $tablet-width) {
+    min-width: 200px;
+    width: 202px;
+    margin: 30px 0;
+  }
+}
+
+.tools__intensity.intensity-fill {
+  & .tools__intensity--level {
+    right: 160px;
+  }
+}
+
+.tools__intensity.intensity-contrast {
+  & .tools__intensity--level {
+    right: 100px;
+  }
+}
+
+.tools__intensity--level {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 2px solid $basic_pink;
+  background-color: $basic_white;
+  border-radius: 50%;
+  right: 35px;
+  top: -6px;
 }
 
 .editor__buttons {
   position: relative;
   padding-top: 38px;
   padding-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    grid-row:  2 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 67px;
+    padding-bottom: 0;
+  }
 
   &::before {
     position: absolute;
@@ -42,12 +124,21 @@
     background-color: $opacity_gray;
     top: 0;
     left: -20px;
+
+    @media (min-width: $tablet-width) {
+      min-width: 275px;
+      left: 0;
+    }
   }
 }
 
 .submit__button--send {
   border-color: $basic_pink;
   color: $basic_pink;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .submit__button--canсel {
