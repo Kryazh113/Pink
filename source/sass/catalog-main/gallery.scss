@@ -3,7 +3,6 @@
 
   @media (min-width: $tablet-width) {
     min-height: 425px;
-
   }
 }
 
@@ -76,13 +75,13 @@
 
 .card-panorama {
   @media (min-width: $tablet-width) {
-  grid-column: 1 / -1;
-  margin-bottom: 50px;
-  width: 100%;
+    grid-column: 1 / -1;
+    margin-bottom: 50px;
+    width: 100%;
   }
 }
 
-.card-panorama .card__text{
+.card-panorama .card__text {
   @media (min-width: $tablet-width) {
     margin: 0 20px;
     display: grid;
