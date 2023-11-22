@@ -6,7 +6,7 @@
 }
 
 .price__list {
-  position: relative;
+  padding: 0;
   list-style: none;
   display: flex;
   right: 320px;
@@ -20,6 +20,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    padding: 0;
   }
 }
 
@@ -50,12 +51,22 @@
   @media (min-width: $tablet-width) {
     padding: 7px;
   }
+
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    padding: 16px;
+  }
 }
 
 .price__value {
   font-size: 18px;
   font-weight: 300;
   line-height: 30px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .options__list {
@@ -73,15 +84,27 @@
 
   @media (min-width: $tablet-width) {
     justify-content: center;
+    height: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 59px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .not__mobile--item {
     justify-content: flex-start;
+    padding: 10px;
   }
 
   .price__toggles.slider__toggles {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .not__mobile--item {
+    font-size: 18px;
   }
 }

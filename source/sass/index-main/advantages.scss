@@ -42,12 +42,15 @@
     width: 300px;
     margin-top: 150px;
     padding: 0 30px;
+    font-size: 40px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    margin-top: 250px;
+    margin-top: 200px;
     margin-bottom: 20px;
+    font-size: 50px;
+    line-height: normal;
   }
 }
 
@@ -197,6 +200,11 @@
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 24px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .advantages__description {
@@ -215,6 +223,8 @@
 
   @media (min-width: $desktop-width) {
     text-align: center;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
@@ -308,5 +318,10 @@
   @media (min-width: $tablet-width) {
     color: $basic_pink;
     text-decoration: underline;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

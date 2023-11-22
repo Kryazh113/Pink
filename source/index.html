@@ -46,7 +46,7 @@
       <div class="advantages__wrapper">
         <header class="advantages__header main-header">
           <h2 class="visually-hidden">Все преимущества нашего приложения</h2>
-          <p class="advanteges__header--preview main-header--preview">Взгляните на жизнь<br> иначе!</p>
+          <p class="advanteges__header--preview main-header--preview">Взгляните<br class="not__mobile"> на жизнь<br> иначе!</p>
           <div class="advantages__link--logotypes">
             <a class="advantages__link button" href="#">Скачать приложение</a>
             <div class="advantages__logo-wrapper">
@@ -59,7 +59,6 @@
         </header>
         <div class="advantages__preview">
           <span class="advantages__preview--text">Устали от серости мегаполиса?</span>
-
           <span class="advantages__preview--text"> Нам есть, что вам<br class="not__mobile"> предложить!</span>
         </div>
         <div class="advantages__list--wrapper">
@@ -122,7 +121,80 @@
       </div>
     </section>
 
-    <section class="price">
+    <section class="price only__mobile">
+      <div class="price__wrapper slider wrapper">
+        <h2 class="visually-hidden">Тарифные планы</h2>
+        <ul class="price__list slider__list">
+          <li class="price__item  slider__item">
+            <h3 class="price__title">
+              База<br>
+              <span class="price__value">1,99 USD</span>
+            </h3>
+            <ul class="price__item--options options__list">
+              <li class="options__item">
+                <span class="only__mobile">Розовый фильтр</span>
+                <img src="img/yes.svg" width="31" height="21" alt="yes">
+              </li>
+              <li class="options__item">
+                <span class="only__mobile">Смайлики</span>
+                <img src="img/no.svg" width="27" height="27" alt="no">
+              </li>
+              <li class="options__item">
+                <span class="only__mobile">Комментарии</span>
+                <img src="img/no.svg" width="27" height="27" alt="no">
+              </li>
+            </ul>
+          </li>
+          <li class="price__item is-hit slider__item slider__item--current">
+            <h3 class="price__title">
+              Стандарт<br>
+              <span class="price__value">3,99 USD</span>
+            </h3>
+            <ul class="price__item--options options__list">
+              <li class="options__item">
+                <span class="only__mobile">Розовый фильтр</span>
+                <img src="img/yes.svg" width="31" height="21" alt="yes">
+              </li>
+              <li class="options__item">
+                <span class="only__mobile">Смайлики</span>
+                <img src="img/yes.svg" width="31" height="21" alt="yes">
+              </li>
+              <li class="options__item">
+                <span class="only__mobile">Комментарии</span>
+                <img src="img/no.svg" width="27" height="27" alt="no">
+              </li>
+            </ul>
+          </li>
+          <li class="price__item slider__item">
+            <h3 class="price__title">
+              Анлим<br>
+              <span class="price__value">9,99 USD</span>
+            </h3>
+            <ul class="price__item--options options__list">
+              <li class="options__item">
+                <span class="only__mobile">Розовый фильтр</span>
+                <img src="img/yes.svg" width="31" height="21" alt="yes">
+              </li>
+              <li class="options__item">
+                <span class="only__mobile">Смайлики</span>
+                <img src="img/yes.svg" width="31" height="21" alt="yes">
+              </li>
+              <li class="options__item">
+                <span class="only__mobile">Комментарии</span>
+                <img src="img/yes.svg" width="31" height="21" alt="yes">
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <p class="price__toggles slider__toggles only__mobile">
+          <button class="slider__toggle" type="button"></button>
+          <button class="slider__toggle  slider__toggle--current" type="button"></button>
+          <button class="slider__toggle" type="button"></button>
+        </p>
+      </div>
+    </section>
+
+    <section class="price not__mobile">
       <div class="price__wrapper slider wrapper">
         <h2 class="visually-hidden">Тарифные планы</h2>
         <ul class="price__list slider__list">

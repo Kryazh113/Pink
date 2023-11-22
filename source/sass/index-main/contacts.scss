@@ -72,8 +72,17 @@
   min-width: 320px;
   width: 100%;
   height: 200px;
+
+  @media (min-width: $tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 502px;
+  }
 }
 
 .map {
   width: 100%;
+  height: 100%;
 }
