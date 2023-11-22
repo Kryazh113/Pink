@@ -215,16 +215,26 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  &:hover {
+    border-color: $dark_gray;
+  }
+
+  &:active {
+    outline: 0;
+    border-color: $basic_pink;
+  }
 }
 
 .form__input__icon {
   position: absolute;
-  width: 59px;
-  height: 59px;
+  width: 55px;
+  height: 56px;
   padding: 20px;
   background-color: $table_background;
-  right: 0;
-  top: 0;
+  right: 1px;
+  top: 1px;
+  border-radius: 2px;
 }
 
 .achievements,
@@ -267,6 +277,14 @@
   top: 5px;
 }
 
+.achievements__checkbox + label:hover::before {
+  border-color: $dark_gray;
+}
+
+.achievements__checkbox + label:active::before {
+  border-color: $basic_pink;
+}
+
 .achievements__checkbox:checked + label::after {
   content: "";
   position: absolute;
@@ -301,6 +319,14 @@
   top: 5px;
 }
 
+.application__radio-button + label:hover::before {
+  border-color: $dark_gray;
+}
+
+.application__radio-button + label:active::before {
+  border-color: $basic_pink;
+}
+
 .application__radio-button:checked + label::after {
   content: "";
   position: absolute;
@@ -323,6 +349,18 @@
   border-radius: 1px;
   border: 2px solid $basic_green;
   margin-bottom: 46px;
+
+  &:hover {
+    background-color: $dark_green;
+  }
+
+  &:active {
+    color: rgba($basic_white, 0.3);
+  }
+
+  &:disabled {
+    background-color: $table_background;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;

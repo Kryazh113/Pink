@@ -74,6 +74,16 @@
   margin-top: 28px;
   margin-bottom: 32px;
   color: $basic_white;
+  z-index: 5;
+
+  &:hover {
+    background-color: $basic_white;
+    color: $basic_pink;
+  }
+
+  &:active {
+    color: rgba($basic_pink, 0.3);
+  }
 }
 
 .advantages__logo-wrapper {
@@ -318,6 +328,14 @@
   @media (min-width: $tablet-width) {
     color: $basic_pink;
     text-decoration: underline;
+
+    &:hover {
+      color: $dark_gray;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $desktop-width) {

@@ -85,4 +85,12 @@
 .modal__button {
   margin-top: 52px;
   margin-bottom: 52px;
+
+  &:hover {
+    background-color: $dark_green;
+  }
+
+  &:active {
+    color: rgba($basic_white, 0.3);
+  }
 }

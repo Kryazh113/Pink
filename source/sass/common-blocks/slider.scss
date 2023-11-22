@@ -18,6 +18,14 @@
   border-radius: 50%;
   background-color: rgba($dark_gray, 0.3);
   border: none;
+
+  &:hover {
+    background-color: rgba($dark_gray, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($dark_gray, 0.1);
+  }
 }
 
 .slider__toggle--current {

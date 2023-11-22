@@ -61,6 +61,30 @@
   height: 44px;
   margin: 0 auto;
 
+  & svg {
+    & path {
+      fill: rgba($dark_gray, 0.3);
+    }
+  }
+
+  &.active__button svg {
+    & path {
+      fill: $basic_pink;
+    }
+  }
+
+  &:hover svg {
+    & path {
+      fill: rgba($dark_gray, 0.5);
+    }
+  }
+
+  &:active svg {
+    & path {
+      fill: $basic_pink;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: 22px;
     height: 22px;
@@ -140,6 +164,11 @@
   border-radius: 50%;
   right: 35px;
   top: -6px;
+  cursor: pointer;
+
+  &:active {
+    background-color: $basic_pink;
+  }
 }
 
 .editor__buttons {
@@ -169,6 +198,15 @@
   border-color: $basic_pink;
   color: $basic_pink;
 
+  &:hover {
+    background-color: $basic_pink;
+    color: $basic_white;
+  }
+
+  &:active {
+    color: rgba($basic_white, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
   }
@@ -181,6 +219,15 @@
 .submit__button--canсel {
   border-color: $dark_gray;
   opacity: 0.1;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: $dark_gray;
+    color: rgba($basic_white, 0.3);
+  }
 
   @media (min-width: $desktop-width) {
     min-width: 183px;

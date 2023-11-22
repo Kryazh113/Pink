@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 2;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
@@ -20,6 +21,22 @@
   width: 74px;
   height: 23px;
   margin: 20px 0;
+
+  &:hover svg {
+    opacity: 1;
+
+    path {
+      fill: $basic_pink;
+    }
+  }
+
+  &:active svg {
+    opacity: 0.3;
+
+    path {
+      fill: $basic_white;
+    }
+  }
 }
 
 .page-header--opened {

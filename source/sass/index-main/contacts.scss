@@ -64,6 +64,14 @@
   font-weight: 300;
   margin-top: 5px;
   margin-bottom: 31px;
+
+  &:hover {
+    color: $dark_gray;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__map {
