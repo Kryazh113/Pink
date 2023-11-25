@@ -74,10 +74,19 @@ a {
   min-height: 236px;
   background-position: 50% 4%;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("./../../img/back-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     background-image: url("./../../img/back-tablet.jpg");
     min-height: 729px;
     justify-content: flex-start;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../../img/back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -85,6 +94,10 @@ a {
     background-image: url("./../../img/back-desktop.jpg");
     top: -100px;
     min-height: 853px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../../img/back-desktop@2x.jpg");
+    }
   }
 }
 

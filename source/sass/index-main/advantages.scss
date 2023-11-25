@@ -3,20 +3,80 @@
 }
 
 .advantages__header {
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 111px;
+    height: 197px;
+    left: 0;
+    right: 0;
+    top: 209px;
+    margin: 0 auto;
+    background-image: url("./../../img/screen.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../../img/screen@2x.jpg");
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 195px;
+      height: 346px;
+      right: 93px;
+      top: 238px;
+      margin: 0;
+      left: auto;
+      background-image: url("./../../img/tablet_screen.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("./../../img/tablet_screen@2x.jpg");
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 230px;
+      height: 408px;
+      right: 251px;
+      top: 272px;
+      margin: 0;
+      left: auto;
+      background-image: url("./../../img/desktop_screen.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("./../../img/desktop_screen@2x.jpg");
+      }
+    }
+  }
+
   &::after {
     content: "";
     position: absolute;
     width: 320px;
     height: 286px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     top: 176px;
     background-image: url("./../../img/hands_phone.png");
     background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../../img/hands_phone@2x.png");
+    }
 
     @media (min-width: $tablet-width) {
       background-image: url("./../../img/hands_phone--tablet.png");
       width: 660px;
       height: 545px;
       top: 184px;
+      right: 1px;
+      left: auto;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("./../../img/hands_phone--tablet@2x.png");
+      }
     }
 
     @media (min-width: $desktop-width) {
@@ -24,6 +84,10 @@
       width: 1050px;
       height: 645px;
       top: 208px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("./../../img/hands_phone--desktop@2x.png");
+      }
     }
   }
 }
@@ -211,7 +275,12 @@
   font-weight: 700;
   margin-bottom: 24px;
 
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
   @media (min-width: $desktop-width) {
+    text-align: center;
     font-size: 30px;
     line-height: 30px;
   }
@@ -246,6 +315,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    justify-content: space-around;
     padding: 0 131px;
     width: 100%;
     z-index: 1;
@@ -255,6 +325,7 @@
 }
 
 .advantages__picture {
+  background-color: $light_gray;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {

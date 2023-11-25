@@ -9,6 +9,10 @@
     <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/fav/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/fav/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
 
 <body class="page-body">
@@ -83,9 +87,17 @@
             </div>
           </dl>
           <div class="advantages__item advantages__picture--wrapper">
-            <img class="advantages__picture only-desktop" src="img/iphone__mobile-1.png" width="157" height="320" alt="изображение айфона">
-            <img class="advantages__picture only-desktop" src="img/iphone__mobile-2.png" width="157" height="320" alt="изображение айфона">
-            <img class="advantages__picture" src="img/iphone__mobile-3.png" width="157" height="320" alt="изображение айфона">
+            <picture>
+              <img class="advantages__picture only-desktop" src="img/iphone__mobile-1.png" width="157" height="320" srcset="img/iphone__mobile-1@2x.png 2x" alt="изображение айфона">
+            </picture>
+            <picture>
+              <img class="advantages__picture only-desktop" src="img/iphone__mobile-2.png" width="157" height="320" srcset="img/iphone__mobile-2@2x.png 2x" alt="изображение айфона">
+            </picture>
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/iphone__desktop-3.png 1x, img/iphone__desktop-3@2x.png 2x">
+              <source media="(min-width:660px)" srcset="img/iphone__tablet-3.png 1x, img/iphone__tablet-3@2x.png 2x">
+              <img class="advantages__picture" src="img/iphone__mobile-3.png" width="157" height="320" srcset="img/iphone__mobile-3@2x.png 2x" alt="изображение айфона">
+            </picture>
           </div>
         </div>
         <div class="advantages__duration duration not__mobile">
