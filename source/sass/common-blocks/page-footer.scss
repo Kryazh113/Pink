@@ -18,8 +18,21 @@
 
 .page-footer__logo {
   margin-bottom: 41px;
+  display: block;
+  width: 145px;
+  height: 40px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
+
+  &:hover svg {
+    fill: $basic_pink;
+  }
+
+  &:active svg {
+    fill: $dark_gray;
+    opacity: 0.3;
+  }
 }
+

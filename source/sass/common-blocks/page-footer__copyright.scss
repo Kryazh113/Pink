@@ -1,5 +1,27 @@
 .page-footer__copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   @media (min-width: $tablet-width) {
     text-align: right;
+  }
+}
+
+.copyright__link {
+  margin-left: 13px;
+  width: 27px;
+  height: 34px;
+
+  & svg {
+    fill: $basic_pink;
+  }
+
+  &:hover svg {
+    fill: $dark_gray;
+  }
+
+  &:active svg {
+    fill: rgba($dark_gray, 0.3);
   }
 }

@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 11px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -9,5 +10,27 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 3px solid rgba($dark_gray, 0.1);
+
+  & svg {
+    fill: $basic_pink;
+  }
+
+  &:hover {
+    border-color: $dark_gray;
+  }
+
+  &:active {
+    opacity: 0.1;
   }
 }

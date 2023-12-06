@@ -1,0 +1,44 @@
+.logo {
+  width: 74px;
+  height: 23px;
+  fill: $basic_white;
+
+  @media (min-width: $tablet-width) {
+    width: 145px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 147px;
+  }
+}
+
+.logo-text {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.logo-tablet-glasses {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 145px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.logo-desktop-glasses {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}

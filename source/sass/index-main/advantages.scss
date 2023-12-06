@@ -205,10 +205,10 @@
   &::before {
     position: absolute;
     content: "";
-    border: 20px solid transparent;
-    border-right: 20px solid $basic_green;
-    border-bottom: 20px solid $basic_green;
-    top: 0;
+    border: 57px solid transparent;
+    border-right: 357px solid #2aab6d;
+    border-bottom: 17px solid #2aab6d;
+    top: -58px;
   }
 
   @media (min-width: $tablet-width) {
