@@ -79,6 +79,7 @@ a {
   }
 
   @media (min-width: $tablet-width) {
+    top: -108px;
     background-image: url("./../../img/back-tablet.jpg");
     min-height: 729px;
     justify-content: flex-start;
@@ -92,7 +93,6 @@ a {
   @media (min-width: $desktop-width) {
     padding: 0 130px;
     background-image: url("./../../img/back-desktop.jpg");
-    top: -100px;
     min-height: 853px;
 
     @media (min-resolution: 2dppx) {
@@ -109,7 +109,7 @@ a {
   font-weight: 300;
   line-height: normal;
   margin-top: 36px;
-  padding-top: 60px;
+  padding-top: 63px;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;

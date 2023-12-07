@@ -3,7 +3,6 @@
 }
 
 .advantages__header {
-
   &::before {
     content: "";
     position: absolute;
@@ -11,7 +10,7 @@
     height: 197px;
     left: 0;
     right: 0;
-    top: 209px;
+    top: 219px;
     margin: 0 auto;
     background-image: url("./../../img/screen.jpg");
     background-size: cover;
@@ -57,7 +56,7 @@
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: 176px;
+    top: 186px;
     background-image: url("./../../img/hands_phone.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -96,7 +95,7 @@
   min-height: 425px;
   font-size: 24px;
   font-weight: 300;
-  line-height: 28.8px;
+  line-height: 29px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -104,15 +103,17 @@
     min-width: 300px;
     min-height: 127px;
     width: 300px;
-    margin-top: 150px;
+    margin-top: 203px;
+    margin-left: 20px;
     padding: 0 30px;
     font-size: 40px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    margin-top: 200px;
-    margin-bottom: 20px;
+    margin-top: 208px;
+    margin-left: 0;
+    margin-bottom: 6px;
     font-size: 50px;
     line-height: normal;
   }
@@ -132,13 +133,28 @@
     width: 300px;
     z-index: 2;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .advantages__link {
-  margin-top: 28px;
-  margin-bottom: 32px;
+  margin-top: 39px;
+  margin-bottom: 33px;
   color: $basic_white;
   z-index: 5;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 32px;
+    min-width: 300px;
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 68px;
+    font-size: 21px;
+  }
 
   &:hover {
     background-color: $basic_white;
@@ -154,10 +170,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 35px;
+    margin-left: 45px;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
   }
 }
 
@@ -166,15 +187,17 @@
 }
 
 .advantages__link--description {
+  padding: 0 20px;
   margin: 0;
   text-align: center;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
-  margin-bottom: 38px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
+    padding: 0;
   }
 }
 
@@ -188,10 +211,30 @@
   font-weight: 300;
   line-height: 29px;
   margin-bottom: 70px;
+  margin-top: -40px;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
     line-height: normal;
+    margin-top: -63px;
+    margin-bottom: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -45px;
+    margin-bottom: 22px;
+  }
+}
+
+.advantages__preview--text {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
   }
 }
 
@@ -205,10 +248,25 @@
   &::before {
     position: absolute;
     content: "";
-    border: 57px solid transparent;
-    border-right: 357px solid #2aab6d;
-    border-bottom: 17px solid #2aab6d;
-    top: -58px;
+    border: 69px solid transparent;
+    border-right: 253px solid $light_gray;
+    border-bottom: 18px solid $light_gray;
+    top: -87px;
+
+    @media (min-width: $tablet-width) {
+      border: 45px solid transparent;
+      border-right: 716px solid $light_gray;
+      border-bottom: 18px solid $light_gray;
+      top: -78px;
+      right: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      border: 153px solid $basic_white;
+      border-right: 1145px solid $basic_white;
+      top: -72px;
+      border-bottom: 14px solid $basic_white;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -221,21 +279,27 @@
     min-height: 715px;
     justify-content: flex-end;
     padding: 0 154px;
+    top: -60px;
+    z-index: -1;
+    margin-bottom: -60px;
   }
 }
 
 .advantages__list {
   display: flex;
   flex-direction: column;
+  margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    margin-bottom: 11px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
     flex-direction: row;
-    gap: 68px;
+    gap: 83px;
+    margin-bottom: 39px;
   }
 }
 
@@ -251,7 +315,8 @@
   @media (min-width: $desktop-width) {
     z-index: 2;
     background-color: $light_gray;
-    padding-top: 50px;
+    padding-top: 56px;
+    max-width: 240px;
 
     &:not(:last-child)::before {
       content: "";
@@ -273,7 +338,7 @@
   text-align: center;
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 24px;
+  margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -283,6 +348,7 @@
     text-align: center;
     font-size: 30px;
     line-height: 30px;
+    margin-bottom: 23px;
   }
 }
 
@@ -293,10 +359,11 @@
   font-size: 14px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 43px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     text-align: left;
+    margin-bottom: 34px;
     padding: 0;
   }
 
@@ -304,6 +371,8 @@
     text-align: center;
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 20px;
+    max-width: 240px;
   }
 }
 
@@ -311,16 +380,18 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     left: 20px;
+    top: -57px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-around;
     padding: 0 131px;
-    width: 100%;
+    max-width: 100%;
     z-index: 1;
-    top: 150px;
-    gap: 23px;
+    top: 92px;
+    left: 48px;
+    gap: 140px;
   }
 }
 
@@ -355,14 +426,21 @@
     align-items: center;
     justify-content: space-between;
     gap: 72px;
-    margin-bottom: 140px;
+    margin-bottom: 151px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 131px;
     justify-content: flex-start;
     background-color: $light_gray;
-    padding-bottom: 67px;
+    padding-bottom: 70px;
+    margin-bottom: 123px;
+  }
+}
+
+.duration__picture {
+  @media (min-width: $desktop-width) {
+    width: 300px;
   }
 }
 
@@ -370,7 +448,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 9px;
+    margin-top: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 23px;
+    margin-top: 55px;
   }
 }
 

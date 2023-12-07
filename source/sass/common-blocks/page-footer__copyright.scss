@@ -5,6 +5,12 @@
 
   @media (min-width: $tablet-width) {
     text-align: right;
+    font-weight: 300;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    margin-left: -20px;
   }
 }
 

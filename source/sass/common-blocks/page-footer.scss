@@ -10,9 +10,13 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    margin: 40px 0;
+    margin: 34px 0;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 75px 0;
   }
 }
 
@@ -35,4 +39,3 @@
     opacity: 0.3;
   }
 }
-

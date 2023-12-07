@@ -4,10 +4,14 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
+    row-gap: 3px;
+    column-gap: 60px;
     grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 23px;
+    padding: 0 150px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -17,14 +21,18 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 28.8px;
-  margin-top: 50px;
-  margin-bottom: 45px;
+  margin-top: 40px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
     font-size: 40px;
     font-weight: 300;
     line-height: normal;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
   }
 }
 
@@ -49,11 +57,14 @@
 .contacts__address {
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
+    margin-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin-top: 0;
   }
 }
 
@@ -63,7 +74,11 @@
   font-size: 24px;
   font-weight: 300;
   margin-top: 5px;
-  margin-bottom: 31px;
+  margin-bottom: 24px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 26px;
+  }
 
   &:hover {
     color: $dark_gray;
@@ -79,10 +94,10 @@
   background-size: contain;
   min-width: 320px;
   width: 100%;
-  height: 200px;
+  height: 224px;
 
   @media (min-width: $tablet-width) {
-    height: 374px;
+    height: 385px;
   }
 
   @media (min-width: $desktop-width) {
