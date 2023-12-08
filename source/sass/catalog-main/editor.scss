@@ -12,7 +12,8 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding: 57px 20px;
+    padding: 41px 20px;
+    padding-bottom: 35px;
     display: grid;
     grid-template-columns: 300px 1fr;
     grid-template-rows: 1fr 1fr;
@@ -28,7 +29,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 57px 80px;
+    padding: 38px 80px;
+    column-gap: 90px;
   }
 }
 
@@ -36,7 +38,7 @@
   width: 280px;
   height: 374px;
   margin-top: 20px;
-  margin-bottom: 42px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     width: 300px;
@@ -142,7 +144,7 @@
   @media (min-width: $tablet-width) {
     min-width: 200px;
     width: 202px;
-    margin: 30px 0;
+    margin: 35px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -157,12 +159,20 @@
 .tools__intensity.intensity-fill {
   & .tools__intensity--level {
     right: 160px;
+
+    @media (min-width: $desktop-width) {
+      right: 238px;
+    }
   }
 }
 
 .tools__intensity.intensity-contrast {
   & .tools__intensity--level {
-    right: 100px;
+    right: 90px;
+
+    @media (min-width: $desktop-width) {
+      right: 136px;
+    }
   }
 }
 
@@ -173,9 +183,13 @@
   border: 2px solid $basic_pink;
   background-color: $basic_white;
   border-radius: 50%;
-  right: 35px;
+  right: 25px;
   top: -6px;
   cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    right: 40px;
+  }
 
   &:active {
     background-color: $basic_pink;
@@ -185,7 +199,7 @@
 .editor__buttons {
   position: relative;
   padding-top: 38px;
-  padding-bottom: 41px;
+  padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
@@ -202,6 +216,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    gap: 45px;
+    padding-top: 142px;
   }
 }
 
@@ -220,6 +236,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
+    min-width: 260px;
   }
 
   @media (min-width: $desktop-width) {
@@ -238,6 +255,10 @@
   &:active {
     background-color: $dark_gray;
     color: rgba($basic_white, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 260px;
   }
 
   @media (min-width: $desktop-width) {

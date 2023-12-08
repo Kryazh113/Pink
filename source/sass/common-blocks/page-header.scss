@@ -12,12 +12,14 @@
 
   @media (min-width: $tablet-width) {
     min-height: 108px;
+    justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
   }
 }
 
