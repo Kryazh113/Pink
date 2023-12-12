@@ -1,18 +1,30 @@
 .contest__header.main-header {
+  min-height: 247px;
+  background-size: cover;
+  background-position: 50% -5%;
+
   @media (min-width: $tablet-width) {
-    min-height: 425px;
+    min-height: 440px;
     justify-content: center;
+    background-position: 50% 0%;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 360px;
+    min-height: 394px;
   }
 }
 
 .contest__title {
+  padding-top: 67px;
+
   @media (min-width: $tablet-width) {
     font-size: 50px;
     line-height: normal;
+    padding-top: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 44px;
   }
 }
 
@@ -25,11 +37,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: -100px 130px 0 130px;
+    margin: -100px 130px -27px 130px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 74px;
-    row-gap: 70px;
+    row-gap: 46px;
   }
 }
 
@@ -40,15 +52,16 @@
   line-height: 30px;
   text-align: center;
   margin: 0;
+  margin-top: 5px;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 85px;
+    padding: 20px 85px;
     font-size: 18px;
     order: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 95px;
+    padding-top: 78px;
     padding-bottom: 30px;
     grid-column: 1 / -1;
   }
@@ -57,7 +70,7 @@
 .form__section {
   border: none;
   margin: 0;
-  padding: 44px 20px;
+  padding: 35px 20px 27px 20px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -80,7 +93,7 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0 25px;
-  margin-bottom: 44px;
+  margin-bottom: 35px;
   padding: 0;
   font-size: 14px;
   line-height: 18px;
@@ -100,6 +113,7 @@
 
 .submit {
   padding-top: 0;
+  padding-bottom: 19px;
 }
 
 //порядок расположения на планшетном разрешении
@@ -108,31 +122,42 @@
     order: 0;
     padding: 0;
     border: none;
+    margin-bottom: 0;
   }
 
   .achievements {
     order: 3;
+    padding-bottom: 33px;
+    margin-bottom: 20px;
   }
 
   .contacts {
     order: 2;
+    margin-top: 20px;
+    padding-bottom: 33px;
+    margin-bottom: 22px;
 
     & label {
       flex-direction: column-reverse;
       align-items: flex-start;
+      margin-bottom: 0;
     }
 
-    & span {
+    & .form__label span {
       margin-left: 20px;
+      margin-bottom: 0;
+      margin-top: 10px;
     }
   }
 
   .application {
     order: 1;
+    margin-top: 25px;
   }
 
   .comment {
     order: 4;
+    margin-bottom: 15px;
   }
 
   .submit {
@@ -148,7 +173,7 @@
 @media (min-width: $desktop-width) {
   .user-data {
     & label {
-      margin-bottom: 0;
+      margin-bottom: 10px;
     }
   }
 
@@ -156,6 +181,7 @@
     grid-column: 1 / -1;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 15px;
 
     & label {
       width: 46%;
@@ -168,16 +194,23 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
+    margin-bottom: 10px;
   }
 
   .comment {
     grid-column: 1 / -1;
     padding: 44px 60px;
+    margin-bottom: 20px;
   }
 
   .submit {
     grid-column: 1 / -1;
     flex-direction: row;
+  }
+
+  .application {
+    margin-top: 4px;
+    padding: 50px 72px;
   }
 }
 
@@ -187,8 +220,14 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-transform: uppercase;
+
+  & span {
+    padding-left: 23px;
+    margin-bottom: 6px;
+    display: inline-block;
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -198,8 +237,9 @@
     justify-content: space-between;
 
     & span {
+      padding-left: 0;
       margin-right: 20px;
-      margin-top: 20px;
+      margin-top: 27px;
     }
   }
 }
@@ -258,9 +298,13 @@
 .achievements__check {
   position: relative;
   padding: 7px;
-  padding-left: 46px;
+  padding-left: 58px;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .achievements__checkbox + label::before {
@@ -300,9 +344,13 @@
 .application__radio {
   position: relative;
   padding: 7px;
-  padding-left: 46px;
+  padding-left: 70px;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
 }
 
 .application__radio-button + label::before {
@@ -338,17 +386,33 @@
   top: 16px;
 }
 
+.comment {
+  padding-bottom: 42px;
+}
+
+.comment .form__section__title {
+  margin-bottom: 18px;
+  margin-top: 4px;
+}
+
 .form__textarea {
-  min-height: 197px;
+  min-height: 200px;
+  padding: 15px 20px;
+
+  @media (min-width: $desktop-width) {
+    min-height: 127px;
+  }
 }
 
 .form__button-submit {
   background-color: $basic_green;
   color: $basic_white;
   margin: 0 auto;
-  border-radius: 1px;
+  border-radius: 3px;
   border: 2px solid $basic_green;
-  margin-bottom: 46px;
+  margin-bottom: 37px;
+  min-height: 63px;
+  font-size: 20px;
 
   &:hover {
     background-color: $dark_green;
@@ -370,6 +434,7 @@
 }
 
 .form__text {
+  text-transform: uppercase;
   display: block;
   text-align: center;
 }
