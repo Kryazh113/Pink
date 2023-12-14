@@ -318,7 +318,7 @@
     padding-top: 56px;
     max-width: 240px;
 
-    &:not(:last-child)::before {
+    &::before {
       content: "";
       position: absolute;
       left: -5px;
